@@ -1,0 +1,20 @@
+app:
+  code: SBW
+  name: Spring Boot Web
+  notify: appz@cloudbourne.co
+  
+build:
+  build_file: pom.xml
+  env: DEV
+  image_name: myco/springboot-web
+  image_template: springboot-openjdk8
+  output_files: target/*.jar
+  version: 0.4
+  
+deploy:
+  context: myco/DEV
+  port: 8080
+  replicas: 2
+  
+properties:
+  nano: 26
