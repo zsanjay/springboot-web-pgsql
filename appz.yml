@@ -17,4 +17,5 @@ deploy:
   replicas: 2
   
 properties:
-  nano: 26
+  title: Spring Boot Web - NH
+  nano: 27
