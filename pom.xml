@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.websystique.springboot</groupId>
-	<artifactId>SpringBootStandAloneExample</artifactId>
-	<version>1.0.0</version>
+	<artifactId>SpringBootWeb</artifactId>
+	<version>0.4</version>
 	<packaging>jar</packaging>
 
-	<name>SpringBootStandAloneExample</name>
+	<name>SpringBoot-Web</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
