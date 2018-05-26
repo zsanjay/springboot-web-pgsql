@@ -10,7 +10,7 @@ public class HelloController {
 	@RequestMapping("/")
 	String home(ModelMap modal) {
 		modal.addAttribute("title", "Spring Boot Web");
-		modal.addAttribute("message", "NANO is 0");
+		modal.addAttribute("message", "NANO is 0\n" + System.getProperties());
 		return "hello";
 	}
 }
