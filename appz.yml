@@ -18,4 +18,4 @@ deploy:
   
 properties:
   title: Spring Boot Web - NH
-  nano: 27
+  nano: 28
