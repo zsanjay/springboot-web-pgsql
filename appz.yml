@@ -17,5 +17,5 @@ deploy:
   replicas: 2
   
 properties:
-  title: Spring Boot Web - Portland
+  title: Spring Boot Web - Citi
   nano: 43
