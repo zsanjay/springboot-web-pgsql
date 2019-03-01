@@ -5,14 +5,14 @@ app:
   
 build:
   build_file: pom.xml
-  env: UA
+  env: DEV
   image_name: myco/springboot-web
   image_template: springboot-openjdk8
   output_files: target/*.jar
   version: 0.4
   
 deploy:
-  context: myco/UA
+  context: myco/DEV
   port: 8080
   replicas: 2
   
