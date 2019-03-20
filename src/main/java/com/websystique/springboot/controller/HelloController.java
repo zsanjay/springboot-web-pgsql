@@ -11,6 +11,9 @@ public class HelloController {
 	@Value("${appz.image_version:0.0.0}")
 	private String version;
 	
+	@Value("${appz.env:0}")
+	private String env;
+	
 	@Value("${title:0}")
 	private String title;
 
@@ -19,7 +22,7 @@ public class HelloController {
 	
 	@RequestMapping("/")
 	String home(ModelMap modal) {
-		modal.addAttribute("title", title + " " + version);
+		modal.addAttribute("title", title + " " + version + "/" + env);
 		modal.addAttribute("message", "NANO is " + nano);
 		return "hello";
 	}
