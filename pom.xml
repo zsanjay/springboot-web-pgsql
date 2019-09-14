@@ -20,7 +20,13 @@
 		<!-- Additionally, Please make sure that your JAVA_HOME is pointing to 
 			1.8 when building on commandline -->
 	</properties>
-
+    <repositories>
+        <repository>
+            <id>localrep</id>
+            <name>local repository</name>
+            <url>file:${project.basedir}/lib</url>
+        </repository>
+    </repositories>
 	<dependencies>
 		<!-- Add typical dependencies for a web application -->
 		<!-- Adds Tomcat and Spring MVC, along others -->
@@ -36,8 +42,6 @@
             <groupId>com.websystique.springboot</groupId>
             <artifactId>account-service</artifactId>
             <version>0.0.1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/account-service-0.0.1.jar</systemPath>
         </dependency>
 	</dependencies>
 	<build>
@@ -46,7 +50,7 @@
 					includes all dependencies along with sprinboot loader] that you can run on 
 					command line using java -jar NAME -->
 				<!-- If you are not including it, result would be just a regular jar that you 
-				could run on command line using mvn spring-boot:run [on project root directory]--> 
+				could run on command line using mvn spring-boot:run [on project root directory]-->
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
