@@ -32,6 +32,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>com.websystique.springboot</groupId>
+            <artifactId>account-service</artifactId>
+            <version>0.0.1</version>
+        </dependency>
 	</dependencies>
 	<build>
 		<plugins>

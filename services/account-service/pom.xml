@@ -6,7 +6,9 @@
         <artifactId>services</artifactId>
         <version>0.0.1</version>
     </parent>
+    <groupId>com.websystique.springboot</groupId>
     <artifactId>account-service</artifactId>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
     <name>Spring account service</name>
     <properties>
@@ -24,10 +26,10 @@
     </dependencies>
     <build>
         <plugins>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>
