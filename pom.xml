@@ -8,7 +8,7 @@
     </parent>
     <groupId>com.websystique.springboot</groupId>
     <artifactId>SpringBootWeb</artifactId>
-    <version>${app.version}</version>
+    <version>0.4</version>
     <name>SpringBoot-Web</name>
     <packaging>pom</packaging>
 
