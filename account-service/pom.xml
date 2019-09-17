@@ -3,18 +3,23 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.websystique.springboot</groupId>
-        <artifactId>services</artifactId>
-        <version>0.0.1</version>
+        <artifactId>SpringBootWeb</artifactId>
+        <version>0.4</version>
     </parent>
-    <groupId>com.websystique.springboot</groupId>
+
     <artifactId>account-service</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
-    <name>Spring account service</name>
+    <name>account-service</name>
+
     <properties>
         <java.version>1.8</java.version>
+        <app.version>0.4</app.version>
     </properties>
+
     <dependencies>
+        <!-- Add typical dependencies for a web application -->
+        <!-- Adds Tomcat and Spring MVC, along others -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -22,6 +27,29 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.17</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
     <build>

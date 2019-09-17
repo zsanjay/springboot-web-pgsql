@@ -3,11 +3,14 @@ package com.websystique.micro.service.account.controller;
 import com.websystique.micro.service.account.domain.Account;
 import com.websystique.micro.service.account.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("accounts")
 public class AccountRest {
 
@@ -21,20 +24,21 @@ public class AccountRest {
 
     @GetMapping(path = "find/all")
     public List<Account> findAll() {
-        return accountService.findAll();
+        return (List<Account>)accountService.findAll();
     }
 
     @GetMapping(path = "get/{id}")
-    public Account get(@PathVariable("id") String id) {
-        return this.accountService.get(id);
+    public Account get(@PathVariable("id") Long id) {
+        return this.accountService.findOne(id);
     }
 
     @DeleteMapping(path = "remove/{id}")
-    public void remove(@PathVariable("id") String id) {
+    public void remove(@PathVariable("id") Long id) {
         this.accountService.delete(id);
     }
 
     @PutMapping(path = "save")
+    @CrossOrigin(origins = "*")
     public void save(@RequestBody Account account) {
         this.accountService.save(account);
     }
