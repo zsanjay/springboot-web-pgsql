@@ -17,5 +17,5 @@ deploy:
   replicas: 2
   
 properties:
-  title: Spring Boot Web - Boston
-  nano: 53
+  title: Spring Boot Web - Monday
+  nano: 54
