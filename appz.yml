@@ -1,7 +1,7 @@
 app:
   code: SBW
   name: Spring Boot Web
-  notify: appz@cloudbourne.co
+  notify: appzdev@cloudbourne.co
   
 build:
   build_file: pom.xml
@@ -17,5 +17,5 @@ deploy:
   replicas: 2
   
 properties:
-  title: Spring Boot Web - Monday
+  title: Spring Boot Web - tuesday
   nano: 55
