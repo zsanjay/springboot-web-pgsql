@@ -1,22 +1,33 @@
 package com.websystique.micro.service.account.domain;
 
-public class Account {
+import javax.persistence.*;
+import java.io.Serializable;
 
-    private String id;
+@Entity
+@Table(name = "ACCOUNT")
+public class Account implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "LOGIN")
     private String login;
 
+    @Column(name = "EMAIL")
     private String email;
 
+    @Column(name = "NAME")
     private String name;
 
+    @Column(name = "FULL_NAME")
     private String fullName;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
