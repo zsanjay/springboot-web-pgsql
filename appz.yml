@@ -19,9 +19,9 @@ deploy:
 properties:
   title: Spring Boot Web - tuesday
   MYSQL_DB_HOST: mysql-5-7
-  MYSQL_DB_NAME: springboot-web-accounts
+  MYSQL_DB_NAME: springboot_web_accounts
   MYSQL_DB_PORT: 3306
-  MYSQL_DB_USERNAME: springboot-web-accounts
+  MYSQL_DB_USERNAME: springboot_web_accounts
   MYSQL_DB_PASSWORD:
     vault: MYSQL_DB_PASSWORD
   nano: 61
