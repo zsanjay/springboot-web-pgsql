@@ -6,7 +6,6 @@ See more details at [GitOps SpringBoot SpringOne Demo on AppZ](https://www.eclou
 Set System Environment Variables for Mysql Database, Port, Username, Password
 
 - KEYS
-    MYSQL_DB_DRIVER
     MYSQL_DB_HOST
     MYSQL_DB_NAME
     MYSQL_DB_PORT
@@ -14,7 +13,6 @@ Set System Environment Variables for Mysql Database, Port, Username, Password
     MYSQL_DB_PASSWORD
 
 - i.e:
-export MYSQL_DB_DRIVER="jdbc:mysql"
 export MYSQL_DB_HOST="localhost"
 export MYSQL_DB_NAME="accountdb"
 export MYSQL_DB_PORT="3306"
