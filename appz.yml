@@ -15,7 +15,6 @@ deploy:
   context: alpha/DEV
   port: 8080
   replicas: 2
-  1
   
 properties:
   title: Spring Boot Web - tuesday
