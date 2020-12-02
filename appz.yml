@@ -24,4 +24,4 @@ properties:
   MYSQL_DB_USERNAME: accountuser
   MYSQL_DB_PASSWORD:
     vault: MYSQL_DB_PASSWORD
-  nano: 64
+  nano: 65
