@@ -18,10 +18,10 @@ deploy:
   
 properties:
   title: Spring Boot Web - tuesday
-  MYSQL_DB_HOST: mariadb-master-10-4
-  MYSQL_DB_NAME: accountdb
+  MYSQL_DB_HOST: mysql-5-7
+  MYSQL_DB_NAME: springboot_web
   MYSQL_DB_PORT: 3306
-  MYSQL_DB_USERNAME: accountuser
-  MYSQL_DB_PASSWORD:
-    vault: MYSQL_DB_PASSWORD
+  MYSQL_DB_USERNAME: springboot_web
+  MYSQL_SPRINGBOOTWEB_PASSWORD:
+    vault: MYSQL_SPRINGBOOTWEB_PASSWORD
   nano: 66
