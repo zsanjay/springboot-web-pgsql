@@ -3,10 +3,13 @@ package com.websystique.micro.service.account.controller;
 import com.websystique.micro.service.account.domain.Account;
 import com.websystique.micro.service.account.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.PersistenceContext;
+import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -23,8 +26,13 @@ public class AccountRest {
     }
 
     @GetMapping(path = "find/all")
-    public List<Account> findAll() {
-        return (List<Account>)accountService.findAll();
+    public List<Account> findAll(){
+        try {
+            List<Account> l = (List<Account>) accountService.findAll();
+            return l;
+        } catch (Throwable exc) {
+            return new ArrayList<Account>();
+        }
     }
 
     @GetMapping(path = "get/{id}")
