@@ -10,7 +10,7 @@
 	        <h2>${title}</h2>
 	        <p>${message}</p>
 	        <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="/accounts/find/all" role="button">Check database records</a>
+                 <a class="btn btn-primary btn-lg" href="accounts/find/all" role="button">Check database records</a>
             </p>
 	    </div>
 	</div>
