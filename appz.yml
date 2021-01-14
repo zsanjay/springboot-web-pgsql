@@ -1,18 +1,17 @@
 app:
   code: SBW
   name: Spring Boot Web
-  notify: egalchenko@ecloudcontrol.com
+  notify: appzdev@cloudbourne.co
   
 build:
   build_file: pom.xml
   env: DEV
-  image_name: evgeniivg/springboot-web-ac
   image_template: springboot-v2
   output_files: target/*.jar
   version: 0.4
   
 deploy:
-  context: Evgeniivg/DEV
+  context: alpha/DEV
   port: 8080
   replicas: 1
   
