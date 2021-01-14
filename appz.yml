@@ -6,7 +6,6 @@ app:
 build:
   build_file: pom.xml
   env: DEV
-  image_name: alpha/springboot-web-ac
   image_template: springboot-v2
   output_files: target/*.jar
   version: 0.4
