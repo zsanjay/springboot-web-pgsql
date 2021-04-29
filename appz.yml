@@ -13,6 +13,7 @@ build:
 deploy:
   context: skumarpi/DEV
   port: 8080
+  ingress: nodeport
   replicas: 1
   
 properties:
