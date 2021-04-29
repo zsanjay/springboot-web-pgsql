@@ -16,7 +16,7 @@ deploy:
   replicas: 1
   
 properties:
-  title: Spring Boot Web - Thrusday
+  title: Spring Boot Web - Thursday
   MYSQL_DB_HOST: postgres-master-12-2
   MYSQL_DB_NAME: springbootweb
   MYSQL_DB_PORT: 5432
