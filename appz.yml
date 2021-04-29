@@ -23,4 +23,4 @@ properties:
   MYSQL_DB_USERNAME: postgres
   MYSQL_SPRINGBOOTWEB_PASSWORD:
     vault: MYSQL_SPRINGBOOTWEB_PASSWORD
-  nano: 68
+  nano: 69
