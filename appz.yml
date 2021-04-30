@@ -16,7 +16,7 @@ deploy:
   replicas: 1
   
 properties:
-  title: Spring Boot Web - Thursday
+  title: Spring Boot Web - Client Demo
   DB_HOST: postgres-master-12-2
   DB_NAME: springbootweb
   DB_PORT: 5432
