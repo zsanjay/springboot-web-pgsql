@@ -20,7 +20,7 @@ properties:
   DB_HOST: postgres-master-12-x
   DB_NAME: springbootweb
   DB_PORT: 5432
-  DB_USERNAME: springbootweb
+  DB_USERNAME: postgres
   SPRINGBOOTWEB_PASSWORD:
     vault: POSTGRESQL_SPRINGBOOTWEB_PASSWORD
   nano: 70
