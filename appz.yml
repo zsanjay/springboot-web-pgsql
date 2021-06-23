@@ -17,10 +17,10 @@ deploy:
   
 properties:
   title: Spring Boot Web - Client Demo
-  DB_HOST: postgres-master-12-x
+  DB_HOST: postgres13-master-13-x
   DB_NAME: springbootweb
   DB_PORT: 5432
   DB_USERNAME: postgres
   SPRINGBOOTWEB_PASSWORD:
     vault: POSTGRESQL_SPRINGBOOTWEB_PASSWORD
-  nano: 79
+  nano: 80
