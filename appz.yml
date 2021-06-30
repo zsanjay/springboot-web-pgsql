@@ -1,7 +1,7 @@
 app:
   code: SBW
   name: Spring Boot Web PGSQL
-  notify: noreply@lowtouch.cloud
+  notify: appz@ecloudcontrol.com
   
 build:
   build_file: pom.xml
