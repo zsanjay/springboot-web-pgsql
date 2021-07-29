@@ -1,7 +1,7 @@
 app:
   code: SBW
   name: Spring Boot Web PGSQL
-  notify: appz@ecloudcontrol.com
+  notify: krishnan.rejith@gmail.com
   
 build:
   build_file: pom.xml
@@ -11,7 +11,7 @@ build:
   version: 0.4
   
 deploy:
-  context: alpha/DEV
+  context: rejith/DEV
   port: 8080
   replicas: 1
   
@@ -20,7 +20,7 @@ properties:
   DB_HOST: postgres13-master-13-x
   DB_NAME: springbootweb
   DB_PORT: 5432
-  DB_USERNAME: postgres
+  DB_USERNAME: springbootweb
   SPRINGBOOTWEB_PASSWORD:
     vault: POSTGRESQL_SPRINGBOOTWEB_PASSWORD
   nano: 82
