@@ -1,7 +1,7 @@
 app:
   code: SBW
   name: Spring Boot Web PGSQL
-  notify: appz@ecloudcontrol.com
+  notify: sanjayofficial94@gmail.com
   
 build:
   build_file: pom.xml
@@ -11,7 +11,7 @@ build:
   version: 0.4
   
 deploy:
-  context: alpha/DEV
+  context: zsanjay/DEV
   port: 8080
   replicas: 1
   
